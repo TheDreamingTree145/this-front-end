@@ -9,11 +9,13 @@ const codeBlock =  `
     }
   \`\`\`
 `
+
+export const globalCall = "global call"
 export const simpleCall = "simple call"
 export const simpleCallStrict = "simple call strict"
 
-const sample = arr => Math.floor(Math.random() * arr.length);
-const types = [simpleCall, simpleCallStrict]
+export const sample = arr => Math.floor(Math.random() * arr.length);
+const types = [globalCall, simpleCall, simpleCallStrict]
 const type = types[sample(types)];
 const fakeNames = ["hello", "good", "bye", "forever"]
 const functionName = fakeNames[sample(fakeNames)];
